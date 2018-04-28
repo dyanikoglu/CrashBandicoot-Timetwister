@@ -1,0 +1,221 @@
+uest *pRequest);
+        
+        HRESULT ( STDMETHODCALLTYPE *MultiSendRecv )( 
+            __RPC__in IBidiSpl * This,
+            /* [in] */ __RPC__in const LPCWSTR pszAction,
+            /* [in] */ __RPC__in_opt IBidiRequestContainer *pRequestContainer);
+        
+        END_INTERFACE
+    } IBidiSplVtbl;
+
+    interface IBidiSpl
+    {
+        CONST_VTBL struct IBidiSplVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define IBidiSpl_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define IBidiSpl_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define IBidiSpl_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define IBidiSpl_BindDevice(This,pszDeviceName,dwAccess)	\
+    ( (This)->lpVtbl -> BindDevice(This,pszDeviceName,dwAccess) ) 
+
+#define IBidiSpl_UnbindDevice(This)	\
+    ( (This)->lpVtbl -> UnbindDevice(This) ) 
+
+#define IBidiSpl_SendRecv(This,pszAction,pRequest)	\
+    ( (This)->lpVtbl -> SendRecv(This,pszAction,pRequest) ) 
+
+#define IBidiSpl_MultiSendRecv(This,pszAction,pRequestContainer)	\
+    ( (This)->lpVtbl -> MultiSendRecv(This,pszAction,pRequestContainer) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __IBidiSpl_INTERFACE_DEFINED__ */
+
+
+#ifndef __IBidiSpl2_INTERFACE_DEFINED__
+#define __IBidiSpl2_INTERFACE_DEFINED__
+
+/* interface IBidiSpl2 */
+/* [unique][helpstring][uuid][object] */ 
+
+
+EXTERN_C const IID IID_IBidiSpl2;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("0E8F51B8-8273-4906-8E7B-BE453FFD2E2B")
+    IBidiSpl2 : public IUnknown
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE BindDevice( 
+            /* [in] */ __RPC__in const LPCWSTR pszDeviceName,
+            /* [in] */ const DWORD dwAccess) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE UnbindDevice( void) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE SendRecvXMLString( 
+            /* [in] */ __RPC__in BSTR bstrRequest,
+            /* [out] */ __RPC__deref_out_opt BSTR *pbstrResponse) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE SendRecvXMLStream( 
+            /* [in] */ __RPC__in_opt IStream *pSRequest,
+            /* [out] */ __RPC__deref_out_opt IStream **ppSResponse) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct IBidiSpl2Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            __RPC__in IBidiSpl2 * This,
+            /* [in] */ __RPC__in REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            __RPC__in IBidiSpl2 * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            __RPC__in IBidiSpl2 * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *BindDevice )( 
+            __RPC__in IBidiSpl2 * This,
+            /* [in] */ __RPC__in const LPCWSTR pszDeviceName,
+            /* [in] */ const DWORD dwAccess);
+        
+        HRESULT ( STDMETHODCALLTYPE *UnbindDevice )( 
+            __RPC__in IBidiSpl2 * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *SendRecvXMLString )( 
+            __RPC__in IBidiSpl2 * This,
+            /* [in] */ __RPC__in BSTR bstrRequest,
+            /* [out] */ __RPC__deref_out_opt BSTR *pbstrResponse);
+        
+        HRESULT ( STDMETHODCALLTYPE *SendRecvXMLStream )( 
+            __RPC__in IBidiSpl2 * This,
+            /* [in] */ __RPC__in_opt IStream *pSRequest,
+            /* [out] */ __RPC__deref_out_opt IStream **ppSResponse);
+        
+        END_INTERFACE
+    } IBidiSpl2Vtbl;
+
+    interface IBidiSpl2
+    {
+        CONST_VTBL struct IBidiSpl2Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define IBidiSpl2_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define IBidiSpl2_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define IBidiSpl2_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define IBidiSpl2_BindDevice(This,pszDeviceName,dwAccess)	\
+    ( (This)->lpVtbl -> BindDevice(This,pszDeviceName,dwAccess) ) 
+
+#define IBidiSpl2_UnbindDevice(This)	\
+    ( (This)->lpVtbl -> UnbindDevice(This) ) 
+
+#define IBidiSpl2_SendRecvXMLString(This,bstrRequest,pbstrResponse)	\
+    ( (This)->lpVtbl -> SendRecvXMLString(This,bstrRequest,pbstrResponse) ) 
+
+#define IBidiSpl2_SendRecvXMLStream(This,pSRequest,ppSResponse)	\
+    ( (This)->lpVtbl -> SendRecvXMLStream(This,pSRequest,ppSResponse) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __IBidiSpl2_INTERFACE_DEFINED__ */
+
+
+
+#ifndef __IBidiSplLib_LIBRARY_DEFINED__
+#define __IBidiSplLib_LIBRARY_DEFINED__
+
+/* library IBidiSplLib */
+/* [helpstring][version][uuid] */ 
+
+
+EXTERN_C const IID LIBID_IBidiSplLib;
+
+EXTERN_C const CLSID CLSID_BidiRequest;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("B9162A23-45F9-47cc-80F5-FE0FE9B9E1A2")
+BidiRequest;
+#endif
+
+EXTERN_C const CLSID CLSID_BidiRequestContainer;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("FC5B8A24-DB05-4a01-8388-22EDF6C2BBBA")
+BidiRequestContainer;
+#endif
+
+EXTERN_C const CLSID CLSID_BidiSpl;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("2A614240-A4C5-4c33-BD87-1BC709331639")
+BidiSpl;
+#endif
+#endif /* __IBidiSplLib_LIBRARY_DEFINED__ */
+
+/* interface __MIDL_itf_bidispl_0000_0005 */
+/* [local] */ 
+
+#endif /* WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP) */
+#pragma endregion
+
+
+extern RPC_IF_HANDLE __MIDL_itf_bidispl_0000_0005_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_bidispl_0000_0005_v0_0_s_ifspec;
+
+/* Additional Prototypes for ALL interfaces */
+
+unsigned long             __RPC_USER  BSTR_UserSize(     __RPC__in unsigned long *, unsigned long            , __RPC__in BSTR * ); 
+unsigned char * __RPC_USER  BSTR_UserMarshal(  __RPC__in unsigned long *, __RPC__inout_xcount(0) unsigned char *, __RPC__in BSTR * ); 
+unsigned char * __RPC_USER  BSTR_UserUnmarshal(__RPC__in unsigned long *, __RPC__in_xcount(0) unsigned char *, __RPC__out BSTR * ); 
+void                      __RPC_USER  BSTR_UserFree(     __RPC__in unsigned long *, __RPC__in BSTR * ); 
+
+unsigned long             __RPC_USER  BSTR_UserSize64(     __RPC__in unsigned long *, unsigned long            , __RPC__in BSTR * ); 
+unsigned char * _

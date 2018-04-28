@@ -1,0 +1,30 @@
+// Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
+
+#include "SettingsPrivatePCH.h"
+#include "ISettingsModule.h"
+
+
+#define LOCTEXT_NAMESPACE "FSettingsModule"
+
+
+/**
+ * Implements the Settings module.
+ */
+class FSettingsModule
+	: public ISettingsModule
+{
+public:
+
+	// ISettingsModule interface
+
+	virtual void GetContainerNames( TArray<FName>& OutNames ) const override
+	{
+		ContainerNamesToContainers.GenerateKeyArray(OutNames);
+	}
+
+	virtual ISettingsContainerPtr GetContainer( const FName& ContainerName ) override
+	{
+		return ContainerNamesToContainers.FindRef(ContainerName);
+	}
+
+	virtual ISettings

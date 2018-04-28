@@ -1,0 +1,16 @@
+AOM.CS.UserInput.persistedDataTemplate = [
+{id:"template", value:"FineArtMart"},
+{id:"pageColumns", value:"1"},
+{id:"pageRows", value:"1"},
+{id:"horizontalSpacing", value:"0"},
+{id:"verticalSpacing", value:"0"},
+{id:"topMargin", value:"72"},
+{id:"bottomMargin", value:"202.32"},
+{id:"leftMargin", value:"61.92"},
+{id:"rightMargin", value:"61.92"},
+{id:"fileNameFontFamily", value:"Verdana"},
+{id:'fileNameFontFace', value:'Bold'},
+{id:"fileNameFontFamily_display", value:"Verdana"},
+{id:'fileNameFontFace_display', value:'Bold'},
+];
+

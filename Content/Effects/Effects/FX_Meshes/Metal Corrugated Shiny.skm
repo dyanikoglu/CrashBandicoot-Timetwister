@@ -1,0 +1,102 @@
+m); \
+		P_GET_UBOOL(Z_Param_bImmediate); \
+		P_FINISH; \
+		this->SetTargetGear(Z_Param_GearNum,Z_Param_bImmediate); \
+	} \
+ \
+	DECLARE_FUNCTION(execSetGearDown) \
+	{ \
+		P_GET_UBOOL(Z_Param_bNewGearDown); \
+		P_FINISH; \
+		this->SetGearDown(Z_Param_bNewGearDown); \
+	} \
+ \
+	DECLARE_FUNCTION(execSetGearUp) \
+	{ \
+		P_GET_UBOOL(Z_Param_bNewGearUp); \
+		P_FINISH; \
+		this->SetGearUp(Z_Param_bNewGearUp); \
+	} \
+ \
+	DECLARE_FUNCTION(execSetHandbrakeInput) \
+	{ \
+		P_GET_UBOOL(Z_Param_bNewHandbrake); \
+		P_FINISH; \
+		this->SetHandbrakeInput(Z_Param_bNewHandbrake); \
+	} \
+ \
+	DECLARE_FUNCTION(execSetSteeringInput) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Steering); \
+		P_FINISH; \
+		this->SetSteeringInput(Z_Param_Steering); \
+	} \
+ \
+	DECLARE_FUNCTION(execSetThrottleInput) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Throttle); \
+		P_FINISH; \
+		this->SetThrottleInput(Z_Param_Throttle); \
+	}
+
+
+#define Engine_Source_Runtime_Engine_Classes_Vehicles_WheeledVehicleMovementComponent_h_164_EVENT_PARMS \
+	struct WheeledVehicleMovementComponent_eventServerUpdateState_Parms \
+	{ \
+		float InSteeringInput; \
+		float InThrottleInput; \
+		float InBrakeInput; \
+		float InHandbrakeInput; \
+		int32 CurrentGear; \
+	};
+
+
+extern ENGINE_API  FName ENGINE_ServerUpdateState;
+#define Engine_Source_Runtime_Engine_Classes_Vehicles_WheeledVehicleMovementComponent_h_164_CALLBACK_WRAPPERS
+#define Engine_Source_Runtime_Engine_Classes_Vehicles_WheeledVehicleMovementComponent_h_164_INCLASS_NO_PURE_DECLS \
+	private: \
+	static void StaticRegisterNativesUWheeledVehicleMovementComponent(); \
+	friend ENGINE_API class UClass* Z_Construct_UClass_UWheeledVehicleMovementComponent(); \
+	public: \
+	DECLARE_CLASS(UWheeledVehicleMovementComponent, UPawnMovementComponent, COMPILED_IN_FLAGS(CLASS_Abstract), 0, TEXT("/Script/Engine"), NO_API) \
+	DECLARE_SERIALIZER(UWheeledVehicleMovementComponent) \
+	/** Indicates whether the class is compiled into the engine */ \
+	enum {IsIntrinsic=COMPILED_IN_INTRINSIC}; \
+	virtual UObject* _getUObject() const override { return const_cast<UWheeledVehicleMovementComponent*>(this); } \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+
+
+#define Engine_Source_Runtime_Engine_Classes_Vehicles_WheeledVehicleMovementComponent_h_164_INCLASS \
+	private: \
+	static void StaticRegisterNativesUWheeledVehicleMovementComponent(); \
+	friend ENGINE_API class UClass* Z_Construct_UClass_UWheeledVehicleMovementComponent(); \
+	public: \
+	DECLARE_CLASS(UWheeledVehicleMovementComponent, UPawnMovementComponent, COMPILED_IN_FLAGS(CLASS_Abstract), 0, TEXT("/Script/Engine"), NO_API) \
+	DECLARE_SERIALIZER(UWheeledVehicleMovementComponent) \
+	/** Indicates whether the class is compiled into the engine */ \
+	enum {IsIntrinsic=COMPILED_IN_INTRINSIC}; \
+	virtual UObject* _getUObject() const override { return const_cast<UWheeledVehicleMovementComponent*>(this); } \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+
+
+#define Engine_Source_Runtime_Engine_Classes_Vehicles_WheeledVehicleMovementComponent_h_164_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UWheeledVehicleMovementComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UWheeledVehicleMovementComponent) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UWheeledVehicleMovementComponent); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UWheeledVehicleMovementComponent); \
+private: \
+	/** Private copy-constructor, should never be used */ \
+	NO_API UWheeledVehicleMovementComponent(const UWheeledVehicleMovementComponent& InCopy); \
+public:
+
+
+#define Engine_Source_Runtime_Engine_Classes_Vehicles_WheeledVehicleMovementComponent_h_164_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UWheeledVehicleMovementComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private copy-constructor, should never be used */ \
+	NO_API UWheeledVehicleMovementComponent(const UWheeledVehicleMovementComponent& InCopy); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UWheeledVehicleMovementComponent); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UWheeled

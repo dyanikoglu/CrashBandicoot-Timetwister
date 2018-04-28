@@ -1,0 +1,12 @@
+AOM.CS.UserInput.persistedDataTemplate = [
+{id:"template", value:"FourWide"},
+{id:"pageColumns", value:"1"},
+{id:"pageRows", value:"4"},
+{id:"horizontalSpacing", value:"0"},
+{id:"verticalSpacing", value:"21.6"},
+{id:"topMargin", value:"30.24"},
+{id:"bottomMargin", value:"115.92"},
+{id:"leftMargin", value:"48.24"},
+{id:"rightMargin", value:"48.24"},
+];
+

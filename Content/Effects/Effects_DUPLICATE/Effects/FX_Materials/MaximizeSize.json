@@ -1,0 +1,9 @@
+AOM.CS.UserInput.persistedDataTemplate = [
+{id:"template", value:"MaximizeSize"},
+{id:"hasRotate", value:"true"},
+{id:"pageColumns", value:"1"},
+{id:"pageRows", value:"1"},
+{id:"horizontalSpacing", value:"0"},
+{id:"verticalSpacing", value:"0"},
+];
+
