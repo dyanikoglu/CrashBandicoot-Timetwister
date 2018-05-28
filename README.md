@@ -1,3 +1,5 @@
+### Demo can be downloaded from https://github.com/dyanikoglu/CrashBandicoot-Timetwister/releases/download/Release/CBTT_0.783B_64_Installer.exe
+
 # CrashBandicoot-Timetwister
 ![logo](https://github.com/dyanikoglu/CrashBandicoot-Timetwister/blob/master/CrashBandicootTT.png)
 
