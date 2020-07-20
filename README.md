@@ -1,4 +1,7 @@
-![logo](https://github.com/dyanikoglu/CrashBandicoot-Timetwister/blob/master/CrashBandicootTT.png)
+<p align="center">
+  <img src="https://github.com/dyanikoglu/CrashBandicoot-Timetwister/blob/master/CrashBandicootTT.png">
+</p>
+
 # Crash Bandicoot: Timetwister
 ![img](https://github.com/dyanikoglu/CrashBandicoot-Timetwister/raw/master/Readme.gif)
 
