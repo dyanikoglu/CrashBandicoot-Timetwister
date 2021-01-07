@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.25",
+	"EngineAssociation": "4.26",
 	"Category": "",
 	"Description": "",
 	"Plugins": [
@@ -83,6 +83,14 @@
 		{
 			"Name": "SpeedTreeImporter",
 			"Enabled": false
+		},
+		{
+			"Name": "Water",
+			"Enabled": true
+		},
+		{
+			"Name": "ShallowWater",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
