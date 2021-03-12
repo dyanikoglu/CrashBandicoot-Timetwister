@@ -1,7 +1,0 @@
-AOM.CS.UserInput.persistedDataTemplate = [
-{id:"template", value:"FiveContactSheet"},
-{id:"pageColumns", value:"5"},
-{id:"pageRows", value:"8"},
-{id:"horizontalSpacing", value:"34.56"},
-];
-

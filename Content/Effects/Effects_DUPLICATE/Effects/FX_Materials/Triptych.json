@@ -1,8 +1,0 @@
-AOM.CS.UserInput.persistedDataTemplate = [
-{id:"template", value:"Triptych"},
-{id:"pageColumns", value:"1"},
-{id:"pageRows", value:"3"},
-{id:"horizontalSpacing", value:"0"},
-{id:"verticalSpacing", value:"83.52"},
-];
-
