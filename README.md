@@ -6,7 +6,7 @@
 ![img](https://github.com/dyanikoglu/CrashBandicoot-Timetwister/raw/master/Readme.gif)
 
 Crash Bandicoot: Timetwister is a remaked version of Crash Bandicoot 3: Warped's [Tomb Wader](https://www.youtube.com/watch?v=i-olbSv1qTE) level on Unreal Engine 4.26. Every piece of asset is recreated while keeping the nostalgia from the original game.
-Videos related to project can be found at https://www.youtube.com/cbtimetwister
+More info related to project can be found at https://www.dyanikoglu.com/crash-bandicoot-timetwister
 
 ## Contributors
 * Doğa Can YANIKOĞLU: Lead Programmer
